@@ -8,7 +8,7 @@ class UserStorage {
   };
 
   static getUsers(...fields) {
-    const users = this.#users;
+    const users = this.s;
     const newUsers = fields.reduce((newUsers, field) => {
       if (users.hasOwnProperty(field)) {
         newUsers[field] = users[field];
@@ -27,6 +27,14 @@ class UserStorage {
       return newUser;
     }, {});
     return userInfo;
+  }
+
+  static save(clientInro) {
+    const user = this.#users;
+    this.#users.id.push(clientInro.id);
+    this.#users.pw.push(clientInro.pw);
+    this.#users.name.push(clientInro.name);
+    return {success :true};
   }
 }
 

@@ -12,6 +12,6 @@ router.post('/login', ctrl.process.login);
 
 /* Register */
 router.get('/registration', ctrl.output.registration);
-// router.post('/registration', ctrl.process.registration);
+router.post('/registration', ctrl.process.registration);
 
 module.exports = router;
