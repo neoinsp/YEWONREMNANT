@@ -7,7 +7,7 @@
     "yewonremnant": "www.js"
   },
   "scripts": {
-    "start": "node ./app/bin/www.js",
+    "start": "pm2 start app/bin/www.js --watch; pm2 log;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
   }
 }

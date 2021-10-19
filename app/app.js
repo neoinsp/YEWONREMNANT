@@ -10,6 +10,8 @@ const home = require('./src/routes/home/home');
 app.set('view engine', 'ejs'); //'ejs'탬플릿을 엔진으로 한다.
 app.set('views', './app/src/views'); //폴더, 폴더경로 지정
 
+app.use(express.static(`${__dirname}/src/public`));
+
 // 라우터
 app.use('/', home);
 
