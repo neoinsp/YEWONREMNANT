@@ -14,7 +14,7 @@ function login() {
   // console.log(req);
   // console.log(JSON.stringify(req));
 
-  fetch('/login', {
+  fetch('/auth/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -24,9 +24,10 @@ function login() {
     .then((res) => res.json())
     .then((res) => {
       if (res.success) {
+        console;
         location.href = '/';
       } else {
-        alert(res.mag);
+        alert(res.msg);
       }
     })
     .catch((err) => {
