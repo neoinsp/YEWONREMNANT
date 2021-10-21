@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Design -->
+  <link rel="stylesheet" href="/css/comp/init.css" />
+  <link rel="stylesheet" href="/css/comp/nav-top-sub.css" />
+  <link rel="stylesheet" href="/css/page/registration-rt.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <script src="/js/auth/registration-rt.js" defer> </script>
+
+  <title>회원가입 | 렘넌트</title>
+</head>
+
+<body>
+  <header class="nav-top-container">
+    <nav class="nav-top">
+      <ol class="nav-top-item-box">
+
+        <li class="nav-top-item">
+          <a href="#asdfas">
+            <img src="/image/top-nav-arrow.png" alt="" />
+            <div>
+              <span>회원가입 | 렘넌트</span>
+              <span>join the membership</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="nav-top-item"></li>
+
+      </ol>
+    </nav>
+  </header>
+  <form class="register-form">
+    <div class="reg-rt-container">
+      <!-- Componant : 래귤러 박스 컴포넌트 1-->
+      <!-- Componant : 컴포넌트 시작 -->
+      <article class="reg-rt-a1">
+        <!-- Title : 타이틀 박스 -->
+        <div class="reg-rt-a1-b1">
+          <div class="reg-rt-a1-b1-c1">
+            일반정보
+          </div>
+          <div class="reg-rt-a1-b1-c2">
+            General information
+          </div>
+        </div>
+        <!-- Conent : 컨텐츠 박스 -->
+        <div class="reg-rt-a1-b2">
+          <!-- 컬럼 1 : 프로필 이미지 업로드 -->
+          <div class="reg-rt-a1-b2-c1">
+            <div class="image-preview" id="image-preview">
+              <img id="img" />
+            </div>
+            <div class="profile-text-box">
+              <p class="">REMNANT</p>
+              <p class="">예원렘넌트</p>
+              <p class="">업로드 기능 준비중...</p>
+            </div>
+            <!-- <input type="file" id="real-input" class="image_inputType_file" accept="img/*" required multiple> -->
+          </div>
+          <!-- 컬럼 2 : 회원가입 정보 입력 -->
+          <div class="reg-rt-a1-b2-c2">
+            <!-- 컬럼2-로우1 -->
+            <div class="reg-rt-a1-b2-c2-d1">
+              <!-- 컬럼2-로우1-컬럼1 : 좌상단 -->
+              <div class="reg-rt-a1-b2-c2-d1-e1">
+                <p>
+                  <label for="name">이름</label>
+                  <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+                </p>
+                <p>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email 을 입력하세요">
+                </p>
+                <p>
+                  <label for="pw">비밀번호</label>
+                  <input type="password" id="pw" name="pw" placeholder="비밀번호를 입력하세요">
+                </p>
+                <p>
+                  <label for="password">비밀번호 확인</label>
+                  <input type="password" id="confirm-pw" name="password" placeholder="비밀번호를 확인합니다">
+                </p>
+                <p>
+                  <label for="tel">전화번호</label>
+                  <input type="tel" id="tel" name="tel" placeholder="전화번호를 입력하세요">
+                </p>
+                <p>
+                  <label for="ch-num">교인번호</label>
+                  <input type="number" id="ch-num" name="ch-num" placeholder="교인번호를 입력하세요">
+                </p>
+              </div>
+              <!-- 컬럼2-로우1-컬럼1 : 우상단 -->
+              <div class="reg-rt-a1-b2-c2-d1-e2">
+                <p>
+                  <label for="gender">성별</label>
+                  <select id="gender" name="gender" placeholder="성별 입력하세요">
+                    <option value=""> 성별을 선택하세요 </option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="department">소속기관</label>
+                  <select id="department" name="department" placeholder="소속 기관을 선택하세요">
+                    <option value="EL">초등부</option>
+                    <option value="EH">소년부</option>
+                    <option value="MS">중등부</option>
+                    <option value="HS">고등부</option>
+                    <option value="UV">대학국</option>
+                    <option value="ET">기타</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="ch-office">직분</label>
+                  <input type="text" id="ch-office" name="ch-office" placeholder="직분을 입력하세요">
+                </p>
+                <p>
+                  <label for="school">학교명</label>
+                  <input type="text" id="school" name="school" placeholder="학교를 확인합니다">
+                </p>
+                <p>
+                  <label for="grade">학년</label>
+                  <select id="grade" name="grade" placeholder="성별 입력하세요">
+                    <option value="1">1학년</option>
+                    <option value="2">2학년</option>
+                    <option value="3">3학년</option>
+                    <option value="4">4학년</option>
+                    <option value="5">5학년</option>
+                    <option value="6">6학년</option>
+                    <option value="7">7학년</option>
+                    <option value="8">8학년</option>
+                    <option value="9">9학년</option>
+                    <option value="0">10학년</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="internship">인턴쉽 분야</label>
+                  <select id="internship" name="internship" placeholder="성별 입력하세요">
+                    <option value="MM">미디어</option>
+                    <option value="MM">의료</option>
+                    <option value="MM">it비즈니스</option>
+                    <option value="MM">1</option>
+                    <option value="MM">2</option>
+                    <option value="MM">3</option>
+                    <option value="MM">4</option>
+                    <option value="MM">5</option>
+                    <option value="MM">6</option>
+                    <option value="MM">7</option>
+                    <option value="MM">8</option>
+                    <option value="MM">9</option>
+                  </select>
+                </p>
+              </div>
+            </div>
+            <!-- 컬럼2-로우2 : 하단 -->
+            <div class="reg-rt-a1-b2-c2-d2">
+              <div class="reg-rt-a1-b2-c2-d2-e1">
+                <p>
+                  <label for="address">주소</label>
+                  <input type="text" id="address" name="address" placeholder="주소를 입력하세요" readonly />
+                  <input type="text" id="address_detail" name="address_detail" placeholder="상세주소를 입력하세요" />
+                </p>
+              </div>
+              <div class="reg-rt-a1-b2-c2-d2-e2">
+                <p>
+                  <label for="training">본부훈련</label>
+                  <label for="tr-1">1차 합숙</label>
+                  <input type="checkbox" id="tr-1" name="tr-1" />
+                  <label for="tr-2">팀 합숙</label>
+                  <input type="checkbox" id="tr-2" name="tr-2" />
+                  <label for="tr-3">현장 캠프</label>
+                  <input type="checkbox" id="tr-3" name="tr-3" />
+                  <label for="tr-4">전문 학습</label>
+                  <input type="checkbox" id="tr-4" name="tr-4" />
+                  <label for="tr-5">전도 학습</label>
+                  <input type="checkbox" id="tr-5" name="tr-5" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Componant : 래귤러 박스 컴포넌트 2-->
+      <!-- Componant : 컴포넌트 시작 -->
+      <article class="reg-rt-a2">
+        <!-- Title : 타이틀 박스 -->
+        <div class="reg-rt-a2-b1">
+          <div class="reg-rt-a2-b1-c1">
+            가족정보
+          </div>
+          <div class="reg-rt-a2-b1-c2">
+            Family information
+          </div>
+        </div>
+        <!-- Conent : 컨텐츠 박스 -->
+        <div class="reg-rt-a2-b2">
+          <!-- 테이블 타이틀 -->
+          <div class="reg-rt-a2-b2-c1">
+            <div class="fam-table-title">관계</div>
+            <div class="fam-table-title">이름</div>
+            <div class="fam-table-title">생년월일(8자리)</div>
+            <div class="fam-table-title">교회직분</div>
+            <div class="fam-table-title">직업</div>
+            <div class="fam-table-title">연락처</div>
+          </div>
+          <!-- 테이블 로우 -->
+
+          <!-- 로우 1 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f1-rel" name="f1-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f1-name" name="f1-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f1-bir-date" name="f1-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f1-ch-office" name="f1-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f1-job" name="f1-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f1-tel" name="f1-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+          <!-- 로우 2 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f2-rel" name="f2-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f2-name" name="f2-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f2-bir-date" name="f2-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f2-ch-office" name="f2-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f2-job" name="f2-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f2-tel" name="f2-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+          <!-- 로우 3 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f3-rel" name="f3-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f3-name" name="f3-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f3-bir-date" name="f3-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f3-ch-office" name="f3-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f3-job" name="f3-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f3-tel" name="f3-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+          <!-- 로우 4 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f4-rel" name="f4-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f4-name" name="f4-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f4-bir-date" name="f4-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f4-ch-office" name="f4-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f4-job" name="f4-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f4-tel" name="f4-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+          <!-- 로우 5 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f5-rel" name="f5-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f5-name" name="f5-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f5-bir-date" name="f5-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f5-ch-office" name="f5-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f5-job" name="f5-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f5-tel" name="f5-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+
+          <!-- 로우 6 -->
+          <div class="reg-rt-a2-b2-c2">
+            <p>
+              <select id="f6-rel" name="f6-rel">
+                <option value=""> 관계를 선택하세요 </option>
+                <option value="GF">할아버지</option>
+                <option value="GM">할머니</option>
+                <option value="FA">아버지</option>
+                <option value="MA">어머니</option>
+                <option value="BR">형재</option>
+                <option value="SI">자매</option>
+                <option value="ET">기타</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f6-name" name="f6-name" placeholder="이름 입력">
+            </p>
+            <p>
+              <input type="text" id="f6-bir-date" name="f6-bir-date" placeholder="ex=19891001">
+            </p>
+            <p>
+              <select id="f6-ch-office" name="f6-ch-office">
+                <option value=""> 교회직분 </option>
+                <option value="RT">렘넌트</option>
+                <option value="YA">청년</option>
+                <option value="LM">평신도</option>
+                <option value="DC">집사</option>
+                <option value="CO">간사</option>
+                <option value="SD">권사</option>
+                <option value="ED">장로</option>
+                <option value="MS">선교사</option>
+                <option value="JP">전도사</option>
+                <option value="PT">목사</option>
+              </select>
+            </p>
+            <p>
+              <input type="text" id="f6-job" name="f6-job" placeholder="직업 입력">
+            </p>
+            <p>
+              <input type="text" id="f6-tel" name="f6-tel" placeholder="- 제외하고 입력">
+            </p>
+          </div>
+
+
+        </div>
+      </article>
+      <p id="button">회원가입</p>
+    </div>
+  </form>
+  </div>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script>
+    window.onload = function () {
+      document.getElementById("address").addEventListener("click", function () { //주소입력칸을 클릭하면
+        //카카오 지도 발생
+        new daum.Postcode({
+          oncomplete: function (data) { //선택시 입력값 세팅
+            document.getElementById("address").value = data.address; // 주소 넣기
+            document.querySelector("input[name=address_detail]").focus(); //상세입력 포커싱
+          }
+        }).open();
+      });
+    }
+
+    // browseBtn.addEventListener('click', () => {
+    //   realInput.click();
+    // });
+
+    // function readInputFile(e) {
+    //   var sel_files = [];
+
+    //   sel_files = [];
+    //   $('#imagePreview').empty();
+
+    //   var files = e.target.files;
+    //   var fileArr = Array.prototype.slice.call(files);
+    //   var index = 0;
+
+    //   fileArr.forEach(function (f) {
+
+    //     if (!f.type.match("image/.*")) {
+    //       alert("이미지 확장자만 업로드 가능합니다.");
+    //       return;
+    //     };
+
+    //     if (files.length < 11) {
+    //       sel_files.push(f);
+    //       var reader = new FileReader();
+    //       reader.onload = function (e) {
+    //         var html = `<a id=img_id_${index}><img src=${e.target.result} data-file=${f.name} /></a>`;
+    //         $('imagePreview').append(html);
+    //         index++;
+    //       };
+    //       reader.readAsDataURL(f);
+    //     }
+    //   })
+    //   if (files.length > 1) {
+    //     alert("최대 10장까지 업로드 할 수 있습니다.");
+    //   }
+    // }
+
+    // $('#real-input').on('change', readInputFile);
+  </script>
+</body>
+
+</html>

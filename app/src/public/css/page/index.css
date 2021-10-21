@@ -1,0 +1,118 @@
+div.index-container {
+  z-index: -1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1300px 1fr;
+      grid-template-columns: 1fr 1300px 1fr;
+  margin: auto;
+  padding-top: 140px;
+  min-height: 1000px;
+}
+
+div.index-container div.index-container-left {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  height: 1500px;
+  -webkit-box-shadow: 2px 2px 2px 2px #e0e0e0;
+          box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+div.index-container div.index-container-left img {
+  position: relative;
+  margin-top: 450px;
+  margin-left: 270px;
+}
+
+div.index-container div.index-container-center {
+  height: 100px;
+}
+
+div.index-container div.index-container-center div.index-hero {
+  display: block;
+  width: 1560px;
+  height: 1000px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url(/assets/image/index-hero-bg@2x.png);
+  background-size: 1760px;
+  margin-left: -20px;
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-first-box {
+  display: block;
+  width: 1300px;
+  height: auto;
+  padding: 70px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 1fr;
+      grid-template-columns: 600px 1fr;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-first-box div.index-hero-first-box-title {
+  font-size: 52px;
+  font-weight: 600;
+  color: #417cdb;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-first-box div.index-hero-first-box-title span.index-hero-first-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-first-box a.index-hero-first-box-apply {
+  display: block;
+  width: auto;
+  height: 50px;
+  padding: 30px;
+  margin: 0;
+  background-color: #89c923;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 45px;
+  margin-top: 13px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-second-box {
+  display: block;
+  width: 1300px;
+  height: auto;
+  padding: 70px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+}
+
+div.index-container div.index-container-center div.index-hero div.index-hero-second-box img.index-hero-second-box-img {
+  width: 100%;
+}
+
+div.index-container div.index-container-center footer.index-footer {
+  display: block;
+  width: 1560px;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url(/image/index-footer@2x.png);
+  background-size: contain;
+  background-color: #ffffff;
+  background-size: 1760px;
+  margin-left: -20px;
+  padding-left: 70px;
+  padding-top: 50px;
+}

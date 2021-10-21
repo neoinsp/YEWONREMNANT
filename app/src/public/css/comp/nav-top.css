@@ -1,0 +1,50 @@
+header.nav-top-container {
+  position: fixed;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 3px 3px 3px #e0e0e0;
+          box-shadow: 3px 3px 3px 3px #e0e0e0;
+  margin: auto;
+  padding-top: 45px;
+}
+
+header.nav-top-container nav.nav-top ol.nav-top-item-box {
+  width: 1300px;
+  height: 50px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 820px 120px 120px 120px 120px;
+      grid-template-columns: 820px 120px 120px 120px 120px;
+  list-style: none;
+}
+
+header.nav-top-container nav.nav-top ol.nav-top-item-box li.nav-top-item {
+  text-align: center;
+  padding-top: 13px;
+}
+
+header.nav-top-container nav.nav-top ol.nav-top-item-box li.nav-top-item a {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+header.nav-top-container nav.nav-top ol.nav-top-item-box li.nav-top-item a span {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #9e9e9e;
+}
+
+header.nav-top-container nav.nav-top ol.nav-top-item-box li:first-child {
+  text-align: left;
+  padding-top: 0;
+}

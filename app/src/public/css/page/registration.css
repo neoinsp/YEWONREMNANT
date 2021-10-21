@@ -1,0 +1,51 @@
+div.index-container {
+  z-index: -1;
+  display: block;
+  width: 1300px;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+}
+
+div.index-container div.reg-selectbox {
+  display: block;
+  width: 1200px;
+  height: 623px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url(/image/reg-hero-bg@2x.png);
+  -webkit-box-shadow: 2px 2px 2px 2px #e0e0e0;
+          box-shadow: 2px 2px 2px 2px #e0e0e0;
+  background-size: contain;
+  margin: auto;
+  margin-top: 200px;
+}
+
+div.index-container div.reg-selectbox button {
+  display: block;
+  width: 130px;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 0.5px solid #e7e7e7;
+  display: inline;
+  margin-top: 500px;
+  margin-left: 165px;
+}
+
+div.index-container div.reg-selectbox button:first-child {
+  margin-left: 89px;
+}
+
+div.index-container div.reg-selectbox button:hover {
+  background-color: #89c923;
+  border: none;
+  color: aliceblue;
+}
