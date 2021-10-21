@@ -9,6 +9,9 @@ const output = {
   registration: (req, res) => {
     res.render('auth/registration');
   },
+  registrationRt: (req, res) => {
+    res.render('auth/registration-rt');
+  },
 };
 
 const process = {

@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/auth/registration.css">
-    <script src="/js/auth/registration.js" defer></script>
 
-    <title>Registration</title>
-  </head>
-  <body>
-    <div class="login-page">
-      <div class="form">
-        <form class="register-form">
-          <input id="id" type="text" placeholder="email address"/>
-          <input id="name" type="text" placeholder="name"/>
-          <input id="pw" type="password" placeholder="password"/>
-          <input id="confirm-pw" type="password" placeholder="password"/>
-          <p id= "button" > SIGN UP </p>
-          <p class="message">Already registered? <a href="/auth/login">Sign In</a></p>
-        </form>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Design -->
+  <link rel="stylesheet" href="/css/comp/init.css" />
+  <link rel="stylesheet" href="/css/comp/nav-top.css" />
+  <link rel="stylesheet" href="/css/page/registration.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="nav-top-container">
+    <nav class="nav-top">
+      <ol class="nav-top-item-box">
+        <li class="nav-top-item">
+          <a href="#">
+            <img src="/image/top-nav-logo.png" alt="" />
+          </a>
+        </li>
+
+        <li class="nav-top-item">
+          <a href="">About Us<br /><span>About Us</span></a>
+        </li>
+
+        <li class="nav-top-item">
+          <a href="">장학금 소개<br /><span>About Scholarships</span></a>
+        </li>
+
+        <li class="nav-top-item">
+          <a href="">회원가입<br /><span>Sign up</span></a>
+        </li>
+
+        <li class="nav-top-item">
+          <a href="">로그인<br /><span>Login</span></a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <div class="index-container">
+    <div class="reg-selectbox">
+      <button class="r">
+        <a href="/auth/registration-rt">렘넌트 회원가입</a></button>
+      <button class="m">교역자 회원가입</button>
+      <button class="p">전문가 회원가입</button>
+      <button class="w">사역자 회원가입</button>
     </div>
-    </body>
-  </body>
+  </div>
+</body>
+
 </html>
-
-<!-- Copyright (c) 2021 by neoinsp (https://codepen.io/neoinsp/pen/eYEzBvQ)
-Fork of an original work Flat HTML5/CSS3 Login Form (https://codepen.io/colorlib/pen/rxddKy
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
- -->
