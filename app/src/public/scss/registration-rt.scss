@@ -1,0 +1,404 @@
+@import './mixin';
+@import './variables';
+
+$title-font-size: 14px;
+$input-font-size: 12px;
+
+$input-height: 40px;
+
+div.reg-rt-container {
+  z-index: -1;
+  @include initBox(1200px, auto, 0, 0, $bg-lv-00);
+  display: grid;
+  margin: auto;
+
+  // Componant : 래귤러 박스 컴포넌트 1
+  // Componant : 컴포넌트 시작
+  article.reg-rt-a1 {
+    @include initBox(1200px, 600px, 0, 0, $bg-lv-01);
+    // @include debugRed();
+    margin-top: 200px;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+
+    // Title : 타이틀 박스
+    div.reg-rt-a1-b1 {
+      @include initBox(1200px, auto, 0, 0, $bg-lv-01);
+      // @include debugBlue();
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      box-shadow: 2px 2px 2px 2px rgba(224, 224, 224, 0.671);
+      z-index: 3;
+      div.reg-rt-a1-b1-c1 {
+        padding-left: 20px;
+        padding-top: 23px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      div.reg-rt-a1-b1-c2 {
+        padding-right: 20px;
+        padding-top: 23px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: right;
+        color: $text-lv-05;
+      }
+    }
+
+    //Conent : 컨텐츠 박스
+    div.reg-rt-a1-b2 {
+      @include initBox(1200px, auto, 0, 0, $bg-lv-01);
+      // @include debugBlue();
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      //컬럼 1 : 프로필 이미지 업로드
+      div.reg-rt-a1-b2-c1 {
+        // @include debugRed();
+        padding-left: 20px;
+        div.image-preview {
+          //디버깅 옵션
+          // @include debugBlue();
+          //블록 관련 처리
+          @include initBox(180px, 180px, 0, auto, $bg-lv-00);
+          margin-top: 100px;
+          border: 3px solid #78c536;
+          border-radius: 50%;
+          //폰트 관련 처리
+          @include setFont($title-font-size, 500, $text-lv-02);
+        }
+        div.profile-text-box {
+          //디버깅 옵션
+          // @include debugBlue();
+          //블록 관련 처리
+          margin-top: 40px;
+          //폰트 관련 처리
+          text-align: center;
+          p:nth-child(1) {
+            @include setFont($title-font-size, 500, $text-lv-02);
+          }
+          p:nth-child(2) {
+            @include setFont($input-font-size, 400, $text-lv-02);
+            margin-top: 5px;
+          }
+          p:nth-child(3) {
+            @include setFont($input-font-size, 400, $ywr-blue);
+            margin-top: 25px;
+          }
+        }
+      }
+      //컬럼 2 : 회원가입 정보 입력
+      div.reg-rt-a1-b2-c2 {
+        // @include debugRed();
+        display: grid;
+        grid-template-rows: 1fr 150px;
+        padding-top: 30px;
+        div.reg-rt-a1-b2-c2-d1 {
+          // @include debugBlue();
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // 컬럼2-로우1-컬럼1 : 좌상단
+          div.reg-rt-a1-b2-c2-d1-e1 {
+            // @include debugRed();
+            p {
+              //디버깅 옵션
+              // @include debugBlue();
+              label {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(130px, 28px, 0, 10px, $bg-lv-01);
+                padding: 12px 0 0 10px;
+                margin-left: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($title-font-size, 500, $text-lv-02);
+              }
+              input {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(200px, $input-height, 0, 0, $bg-lv-00);
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+              }
+            }
+          }
+          // 컬럼2-로우1-컬럼1 : 우상단
+          div.reg-rt-a1-b2-c2-d1-e2 {
+            // @include debugRed();
+            p {
+              //디버깅 옵션
+              // @include debugBlue();
+              label {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(130px, 28px, 0, 10px, $bg-lv-01);
+                padding: 12px 0 0 10px;
+                margin-left: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($title-font-size, 500, $text-lv-02);
+              }
+              input {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(200px, $input-height, 0, 0, $bg-lv-00);
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+              }
+              select {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(212px, $input-height, 0, 0, $bg-lv-00);
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+                //태그 관련 처리
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                background-image: url(../../image/reg-rt-option-bg.png);
+                object-fit: contain;
+              }
+              option {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(200px, $input-height, 0, 0, rgba(0, 0, 0, 0));
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+                //태그 관련 처리
+              }
+            }
+          }
+        }
+        //컬럼2-로우2 : 하단
+        div.reg-rt-a1-b2-c2-d2 {
+          // @include debugBlue();
+          div.reg-rt-a1-b2-c2-d2-e1 {
+            p {
+              label {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(130px, 28px, 0, 10px, $bg-lv-01);
+                padding: 12px 0 0 10px;
+                margin-left: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($title-font-size, 500, $text-lv-02);
+              }
+              input {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(424px, $input-height, 0, 0, $bg-lv-00);
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+              }
+              input:nth-child(3) {
+                width: 200px;
+                margin-left: 10px;
+              }
+            }
+          }
+          div.reg-rt-a1-b2-c2-d2-e2 {
+            p {
+              label:first-child {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(130px, 28px, 0, 10px, $bg-lv-01);
+                padding: 12px 0 0 10px;
+                margin-left: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($title-font-size, 500, $text-lv-02);
+              }
+              label {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(50px, 28px, 0, 10px, $bg-lv-01);
+                padding: 12px 0 0 10px;
+                margin-left: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont(12px, 500, $text-lv-02);
+              }
+              input {
+                //디버깅 옵션
+                // @include debugBlue();
+                //블록 관련 처리
+                @include initBox(20px, 20px, 0, 0, $bg-lv-00);
+                padding: 0 0 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                //폰트 관련 처리
+                @include setFont($input-font-size, 400, $text-lv-02);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Componant : 래귤러 박스 컴포넌트 2
+  // Componant : 컴포넌트 시작
+  article.reg-rt-a2 {
+    @include initBox(1200px, 600px, 0, 0, $bg-lv-01);
+    // @include debugRed();
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+
+    // Title : 타이틀 박스
+    div.reg-rt-a2-b1 {
+      @include initBox(1200px, auto, 0, 0, $bg-lv-01);
+      // @include debugBlue();
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      box-shadow: 2px 2px 2px 2px rgba(224, 224, 224, 0.671);
+      z-index: 3;
+      div.reg-rt-a2-b1-c1 {
+        padding-left: 20px;
+        padding-top: 23px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      div.reg-rt-a2-b1-c2 {
+        padding-right: 20px;
+        padding-top: 23px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: right;
+        color: $text-lv-05;
+      }
+    }
+    div.reg-rt-a2-b2 {
+      //디버깅 옵션
+      // @include debugRed();
+      //블록 관련 처리
+      padding: 55px;
+      div.reg-rt-a2-b2-c1 {
+        //디버깅 옵션
+        // @include debugGreen();
+        //블록 관련 처리
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        div {
+          //디버깅 옵션
+          // @include debugBlue();
+          //블록 관련 처리
+          @include initBox(auto, 30px, 0, auto, $bg-lv-01);
+          padding-top: 10px;
+          //폰트 관련 처리
+          @include setFont($title-font-size, 500, $text-lv-02);
+          vertical-align: middle;
+        }
+      }
+      div.reg-rt-a2-b2-c2 {
+        //디버깅 옵션
+        // @include debugBlue();
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        p {
+          //디버깅 옵션
+          // @include debugRed();
+          padding-left: 25px;
+          input {
+            //디버깅 옵션
+            // @include debugBlue();
+            //블록 관련 처리
+            @include initBox(80%, $input-height, 0, 0, $bg-lv-00);
+            padding: 0 0 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            //폰트 관련 처리
+            @include setFont($input-font-size, 400, $text-lv-02);
+          }
+          select {
+            //디버깅 옵션
+            // @include debugBlue();
+            //블록 관련 처리
+            @include initBox(85%, $input-height, 0, 0, $bg-lv-00);
+            padding: 0 0 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            //폰트 관련 처리
+            @include setFont($input-font-size, 400, $text-lv-02);
+            //태그 관련 처리
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url(../../image/reg-rt-option-bg.png);
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    //디버깅 옵션
+    // @include debugBlue();
+    //블록 관련 처리
+    @include initBox(20%, $input-height, 0, auto, $text-lv-03);
+    padding: 0 0 0 10px;
+    margin-bottom: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    //폰트 관련 처리
+    @include setFont($input-font-size, 400, $text-lv-06);
+  }
+}

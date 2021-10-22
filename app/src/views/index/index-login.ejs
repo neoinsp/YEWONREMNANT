@@ -23,10 +23,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Sweet Alert2 -->
-    <script src="sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css" />
-
     <title>Document</title>
   </head>
 
@@ -49,16 +45,50 @@
           </li>
 
           <li class="nav-top-item">
-            <a href="/auth/registration">회원가입<br /><span>Sign up</span></a>
+            <!-- <a href="/auth/registration">회원가입<br /><span>Sign up</span></a> -->
           </li>
 
           <li class="nav-top-item login-user-box">
-            <a href="/auth/login">로그인<br /><span>Login</span></a>
+            <!-- <a href="">로그인<br /><span>Login</span></a> -->
+            <div class="nav-top-image-box">
+              <img src="/image/top-nav-user-img-df.png" alt="" />
+            </div>
+            <div class="nav-top-name-box">
+              <div class="user-name">이용걸</div>
+              <div class="user-type">Remnant</div>
+            </div>
+            <!-- HTML CSSResult Skip Results Iframe EDIT ON -->
+            <div class="nav-top-user-menu-box">
+              <ul class="menu">
+                <li>
+                  <a href="#"><i class="fas fa-align-left"></i></a>
+                  <ul class="sub">
+                    <li>
+                      <a class="user-menu-first" href="/"
+                        >장학금신청하기<br /><span
+                          >Apply for a scholarship</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a class="user-menu-item" href="/auth/mypage"
+                        >마이페이지<br /><span>my page</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="user-menu-last" href="/auth/logout-process"
+                        >로그아웃<br /><span>Log out</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- HTML CSSResult Skip Results Iframe EDIT ON -->
           </li>
         </ol>
       </nav>
     </header>
-
     <div class="index-container">
       <div class="index-container-left">
         <img src="/image/index-lift-box-item.png" alt="" />

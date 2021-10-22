@@ -1,0 +1,75 @@
+@import './variables';
+
+//midea Quray
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+// Utillity
+@mixin setFont($size, $weigh, $color) {
+  font-size: $size;
+  font-weight: $weigh;
+  color: $color;
+}
+
+@mixin initBox($width, $height, $padding, $margin, $color) {
+  display: block;
+  width: $width;
+  height: $height;
+  padding: $padding;
+  margin: $margin;
+  background-color: $color;
+}
+
+@mixin setPadding($left, $top, $right, $bottom) {
+  padding: $left $top $right $bottom;
+}
+
+@mixin setMargin($left, $top, $right, $bottom) {
+  margin: $left $top $right $bottom;
+}
+
+// container init
+
+@mixin padding1200 {
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
+@mixin stayCenter($width, $height) {
+  width: $width;
+  height: $height;
+  margin: auto;
+}
+
+@mixin padding1100 {
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
+@mixin debugRed {
+  border: 1px solid red;
+}
+@mixin debugBlue {
+  border: 1px solid rgb(44, 142, 255);
+}
+@mixin debugGreen {
+  border: 1px solid rgb(187, 255, 0);
+}
+@mixin debugYellow {
+  border: 1px solid rgb(255, 209, 81);
+}

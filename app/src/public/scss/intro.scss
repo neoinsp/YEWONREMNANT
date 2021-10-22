@@ -1,0 +1,41 @@
+@import './mixin';
+@import './variables';
+
+div.index-container {
+  z-index: -1;
+  @include initBox(1300px, 500px, 0, 0, $bg-lv-00);
+  display: grid;
+  // grid-template-columns: 1fr 1300px 1fr;
+  margin: auto;
+  // min-height: 1000px;
+  div.reg-selectbox {
+    // @include debugBlue();
+    @include initBox(1200px, 623px, 0, 0, $bg-lv-00);
+    background-image: url(/image/scholar-intro-hero-bg@2x.png);
+    background-size: 100%;
+    margin: auto;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 970px 1fr;
+
+    button {
+      @include initBox(150px, 45px, 0, 0, $bg-lv-01);
+      border-radius: 5px;
+      border: 0.5px solid rgb(231, 231, 231);
+      display: inline;
+      margin-top: 650px;
+      margin-left: 40px;
+      // @include debugBlue();
+    }
+
+    button:first-child {
+      margin-left: 390px;
+    }
+
+    button:hover {
+      background-color: $ywr-green;
+      border: none;
+      // color: white;
+    }
+  }
+}

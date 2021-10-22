@@ -1,0 +1,52 @@
+@import './mixin';
+@import './variables';
+
+header.nav-top-container {
+  // @include debugGreen();
+  position: fixed;
+  z-index: 5;
+  @include initBox(100%, 100px, 0, 0, $bg-lv-01);
+  box-shadow: 3px 3px 3px 3px rgb(224, 224, 224);
+  margin: auto;
+  padding-top: 50px;
+  nav.nav-top {
+    // @include debugRed();
+    ol.nav-top-item-box {
+      //디버깅 옵션
+      // @include debugBlue();
+      //블록 관련 옵션
+      @include stayCenter(1300px, 50px);
+      //자식요소 정렬 옵션
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      li:first-child {
+        //디버깅 옵션
+        // @include debugRed();
+        a {
+          //디버깅 옵션
+          // @include debugBlue();
+          //블록 관련 옵션
+          //자식요소 정렬 옵션
+          display: grid;
+          grid-template-columns: 55px 1fr;
+          div {
+            //디버깅 옵션
+            // @include debugBlue();
+            //블록 관련 옵션
+            //자식요소 정렬 옵션
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            span:nth-child(1) {
+              @include setFont(17px, 600, $text-lv-02);
+              margin-top: 3px;
+            }
+            span:nth-child(2) {
+              margin-top: 2px;
+              @include setFont(17px, 400, $text-lv-04);
+            }
+          }
+        }
+      }
+    }
+  }
+}

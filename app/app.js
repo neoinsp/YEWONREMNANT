@@ -7,6 +7,7 @@ const app = express();
 // 라우팅
 const home = require('./src/routes/home/home');
 const auth = require('./src/routes/auth/auth');
+const scholar = require('./src/routes/scholar/scholar');
 
 // 앱 세팅
 app.set('view engine', 'ejs'); //'ejs'탬플릿을 엔진으로 한다.
@@ -19,6 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // 라우터
 app.use('/', home);
 app.use('/auth', auth);
+app.use('/scholar', scholar);
 
 module.exports = app;
 

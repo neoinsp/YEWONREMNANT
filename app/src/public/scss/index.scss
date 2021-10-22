@@ -1,2 +1,75 @@
-hi {
+@import './mixin';
+@import './variables';
+
+div.index-container {
+  z-index: -1;
+  // @include initBox(1300px, 2000px, 0, 0, red);
+  display: grid;
+  grid-template-columns: 1fr 1300px 1fr;
+  margin: auto;
+  padding-top: 140px;
+  min-height: 1000px;
+
+  div.index-container-left {
+    @include initBox(auto, auto, 0, 0, $bg-lv-01);
+    z-index: 2;
+    height: 1500px;
+    box-shadow: 2px 2px 2px 2px rgb(224, 224, 224);
+    img {
+      position: relative;
+      margin-top: 450px;
+      margin-left: 270px;
+    }
+  }
+  div.index-container-center {
+    height: 100px;
+    // @include debugRed();
+    div.index-hero {
+      // @include debugRed();
+      @include initBox(1560px, 1000px, 0, 0, $bg-lv-01);
+      background-image: url(/image/index-hero-bg@2x.png);
+      background-size: 1760px;
+      margin-left: -20px;
+      padding-left: 70px;
+      padding-top: 50px;
+      div.index-hero-first-box {
+        @include initBox(1300px, auto, 70px, 0, rgba(0, 0, 0, 0.8));
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        div.index-hero-first-box-title {
+          // @include debugRed();
+          @include setFont(52px, 600, $ywr-blue);
+          span.index-hero-first-subtitle {
+            @include setFont(20px, 300, $text-lv-06);
+          }
+        }
+        a.index-hero-first-box-apply {
+          // @include debugRed();
+          @include initBox(auto, 50px, 30px, 0, $ywr-green);
+          @include setFont(30px, 600, $text-lv-06);
+          padding-top: 45px;
+          margin-top: 13px;
+          border-radius: 10px;
+          text-align: center;
+        }
+      }
+      div.index-hero-second-box {
+        @include initBox(1300px, auto, 70px, 0, rgba(0, 0, 0, 0.8));
+        margin-top: 10px;
+        img.index-hero-second-box-img {
+          width: 100%;
+        }
+      }
+    }
+    footer.index-footer {
+      @include initBox(1560px, 400px, 0, 0, $bg-lv-01);
+      background-image: url(/image/index-footer@2x.png);
+      background-size: contain;
+      background-color: $bg-lv-01;
+      background-size: 1760px;
+      margin-left: -20px;
+      padding-left: 70px;
+      padding-top: 50px;
+    }
+  }
 }

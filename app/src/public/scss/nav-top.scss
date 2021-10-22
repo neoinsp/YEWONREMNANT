@@ -1,0 +1,41 @@
+@import './mixin';
+@import './variables';
+
+header.nav-top-container {
+  // @include debugGreen();
+  position: fixed;
+  z-index: 5;
+  @include initBox(100%, 100px, 0, 0, $bg-lv-01);
+  box-shadow: 3px 3px 3px 3px rgb(224, 224, 224);
+  margin: auto;
+  padding-top: 45px;
+  nav.nav-top {
+    // @include debugRed();
+    ol.nav-top-item-box {
+      // @include debugBlue();
+      @include stayCenter(1300px, 50px);
+      display: grid;
+      grid-template-columns: 820px 120px 120px 120px 120px;
+      list-style: none;
+      li.nav-top-item {
+        // @include debugRed();
+        text-align: center;
+        padding-top: 13px;
+        a {
+          // @include debugBlue();
+          display: block;
+          @include setFont(15px, 400, $text-lv-02);
+          span {
+            display: block;
+            padding-top: 5px;
+            @include setFont(12px, 300, $text-lv-04);
+          }
+        }
+      }
+      li:first-child {
+        text-align: left;
+        padding-top: 0;
+      }
+    }
+  }
+}

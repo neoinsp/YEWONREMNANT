@@ -7,8 +7,8 @@
 
     <!-- Design -->
     <link rel="stylesheet" href="/css/comp/init.css" />
-    <link rel="stylesheet" href="/css/comp/nav-top-login.css" />
-    <link rel="stylesheet" href="/css/page/index.css" />
+    <link rel="stylesheet" href="/css/comp/nav-top.css" />
+    <link rel="stylesheet" href="/css/intro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- 구글 웹폰트 -->
     <link
@@ -31,6 +31,7 @@
   </head>
 
   <body>
+    <!-- Top Nav 컴포넌트 삽입 -->
     <header class="nav-top-container">
       <nav class="nav-top">
         <ol class="nav-top-item-box">
@@ -49,47 +50,24 @@
           </li>
 
           <li class="nav-top-item">
-            <a href="/auth/registration">회원가입<br /><span>Sign up</span></a>
+            <a href="">회원가입<br /><span>Sign up</span></a>
           </li>
 
-          <li class="nav-top-item login-user-box">
-            <a href="/auth/login">로그인<br /><span>Login</span></a>
+          <li class="nav-top-item">
+            <a href="">로그인<br /><span>Login</span></a>
           </li>
         </ol>
       </nav>
     </header>
+    <!-- / Comp -->
 
     <div class="index-container">
-      <div class="index-container-left">
-        <img src="/image/index-lift-box-item.png" alt="" />
+      <div class="reg-selectbox">
+        <button class="r">
+          <a href="/auth/registration-rt">장학금 신청하기</a>
+        </button>
+        <button class="m">미션장학금 신청하기</button>
       </div>
-      <div class="index-container-center">
-        <div class="index-hero">
-          <div class="index-hero-first-box">
-            <div class="index-hero-first-box-title">
-              <span>Yewon Remnant<br />Scholarship</span><br /><span
-                class="index-hero-first-subtitle"
-                >차세대 선교사들을 위한 발판 예원 렘넌트 장학금</span
-              >
-            </div>
-            <div>
-              <a href="" class="index-hero-first-box-apply"
-                >2021 장학금 신청하기 GO!</a
-              >
-            </div>
-          </div>
-
-          <div class="index-hero-second-box">
-            <img
-              class="index-hero-second-box-img"
-              src="/image/index-text@2x.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <footer class="index-footer"></footer>
-      </div>
-      <div class="index-container-right"></div>
     </div>
   </body>
 </html>

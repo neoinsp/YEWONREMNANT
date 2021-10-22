@@ -1,0 +1,35 @@
+@import './mixin';
+@import './variables';
+
+div.index-container {
+  z-index: -1;
+  @include initBox(1300px, 500px, 0, 0, $bg-lv-00);
+  display: grid;
+  // grid-template-columns: 1fr 1300px 1fr;
+  margin: auto;
+  // min-height: 1000px;
+  div.reg-selectbox {
+    @include initBox(1200px, 623px, 0, 0, $bg-lv-01);
+    background-image: url(/image/reg-hero-bg@2x.png);
+    box-shadow: 2px 2px 2px 2px rgb(224, 224, 224);
+    background-size: contain;
+    margin: auto;
+    margin-top: 200px;
+    button {
+      @include initBox(130px, 45px, 0, 0, $bg-lv-01);
+      border-radius: 5px;
+      border: 0.5px solid rgb(231, 231, 231);
+      display: inline;
+      margin-top: 500px;
+      margin-left: 165px;
+    }
+    button:first-child {
+      margin-left: 89px;
+    }
+    button:hover {
+      background-color: $ywr-green;
+      border: none;
+      color: aliceblue;
+    }
+  }
+}
