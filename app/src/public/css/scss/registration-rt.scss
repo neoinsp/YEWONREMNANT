@@ -7,10 +7,17 @@ $input-font-size: 12px;
 $input-height: 40px;
 
 div.reg-rt-container {
-  z-index: -1;
+  // 디버깅 옵션
+  // @include debugRed();
+  // 박스모델 관련 옵션
   @include initBox(1200px, auto, 0, 0, $bg-lv-00);
-  display: grid;
   margin: auto;
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  z-index: -1;
+  // 자식요소 배치관련 옵션
+  display: grid;
 
   // Componant : 래귤러 박스 컴포넌트 1
   // Componant : 컴포넌트 시작
@@ -386,19 +393,22 @@ div.reg-rt-container {
       }
     }
   }
-
-  button {
+  p#button:hover {
+    background-color: $ywr-blue-btn-hover;
+  }
+  p#button {
     //디버깅 옵션
     // @include debugBlue();
     //블록 관련 처리
-    @include initBox(20%, $input-height, 0, auto, $text-lv-03);
-    padding: 0 0 0 10px;
+    @include initBox(20%, 25px, 10px, auto, $ywr-blue);
+    padding-top: 17.5px;
     margin-bottom: 100px;
     display: inline-block;
     vertical-align: middle;
     border: 1px solid gainsboro;
     border-radius: 5px;
     //폰트 관련 처리
-    @include setFont($input-font-size, 400, $text-lv-06);
+    @include setFont($font-btn-title, 400, $text-lv-06);
+    text-align: center;
   }
 }

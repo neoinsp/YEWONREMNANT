@@ -10,7 +10,8 @@ const ctrl = require('./scholar.ctrl');
 router.get('/intro', ctrl.output.intro);
 
 /* Apply */
-router.get('/apply', ctrl.output.apply);
-// router.post('/scholar', ctrl.process.login);
+router.get('/apply/doce/application', ctrl.output.apply);
+// router.get('/apply/doce/cvdip', ctrl.output.apply);
+// router.get('/apply/doce/mission', ctrl.output.apply);
 
 module.exports = router;

@@ -2,7 +2,7 @@
 
 .login-page {
   width: 360px;
-  padding: 16% 0 0;
+  padding: 13% 0 0;
   margin: auto;
 }
 .form {
@@ -31,6 +31,7 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+  border-radius: 5px;
 }
 .form button {
   font-family: 'Roboto', sans-serif;
@@ -45,6 +46,7 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  border-radius: 5px;
 }
 .form button:hover,
 .form button:active,

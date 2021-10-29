@@ -1,0 +1,208 @@
+@import './mixin';
+@import './variables';
+
+$main-title-font-size: 14px;
+$sub-title-size: 12px;
+
+$comp-widht: 100%;
+$comp-height: 100px;
+
+header.comp-top-nav-login-a1 {
+  // 디버깅 옵션
+  // @include debugRed();
+  // 박스모델 관련 옵션
+  @include initBox($comp-widht, $comp-height, 0, 0, $bg-lv-01);
+  box-shadow: 3px 3px 3px 3px rgb(224, 224, 224);
+  margin: auto;
+  padding-top: 45px;
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  position: fixed;
+  z-index: 5;
+  nav.comp-top-nav-login-a1-b1 {
+    // 디버깅 옵션
+    // @include debugRed();
+    // 박스모델 관련 옵션
+    @include initBox(auto, auto, 0, 0, $bg-lv-01);
+    // 폰트 관련 옵션
+    // 태그 관련 옵션
+    // 배치 관련 옵션
+
+    ol.comp-top-nav-login-a1-b1-c1 {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      @include initBox(1300px, 50px, 0, 0, $bg-lv-01);
+      margin: auto;
+      // 폰트 관련 옵션
+      // 태그 관련 옵션
+      list-style: none;
+      // 배치 관련 옵션
+      display: grid;
+      grid-template-columns: 720px 120px 120px 120px 220px;
+      li {
+        // 디버깅 옵션
+        // @include debugRed();
+        // 박스모델 관련 옵션
+        // 폰트 관련 옵션
+        text-align: left;
+        // 태그 관련 옵션
+        // 배치 관련 옵션
+        a {
+          // 디버깅 옵션
+          // @include debugRed();
+          // 박스모델 관련 옵션
+          // 폰트 관련 옵션
+          @include setFont($font-body, 500, $text-lv-03);
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+          display: block;
+
+          span {
+            display: block;
+            padding-top: 5px;
+            @include setFont($font-placeholder, 300, $text-lv-04);
+          }
+        }
+      }
+      li.comp-top-nav-login-user-box {
+        // 디버깅 옵션
+        // @include debugBlue();
+        // 박스모델 관련 옵션
+        @include initBox(auto, auto, 0, 0, $bg-lv-01);
+        // 폰트 관련 옵션
+        // 태그 관련 옵션
+        // 배치 관련 옵션
+        display: grid;
+        grid-template-columns: 50px 80px 20px;
+        div.comp-top-nav-login-image-box {
+          // 디버깅 옵션
+          // @include debugBlue();
+          // 박스모델 관련 옵션
+          @include initBox(auto, 50px, 0, 0, $bg-lv-01);
+          // 폰트 관련 옵션
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+        }
+        div.comp-top-nav-login-name-box {
+          // 디버깅 옵션
+          // @include debugBlue();
+          // 박스모델 관련 옵션
+          @include initBox(auto, 50px, 0, 0, $bg-lv-01);
+          padding-top: 6px;
+          // 폰트 관련 옵션
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+          div.comp-top-nav-login-user-name {
+            // 디버깅 옵션
+            // @include debugBlue();
+            // 박스모델 관련 옵션
+            // 폰트 관련 옵션
+            @include setFont($font-sub-title, 500, $text-lv-03);
+            // 태그 관련 옵션
+            // 배치 관련 옵션
+          }
+          div.comp-top-nav-login-user-type {
+            // 디버깅 옵션
+            // @include debugBlue();
+            // 박스모델 관련 옵션
+            // 폰트 관련 옵션
+            @include setFont($font-body, 400, $text-lv-05);
+            // 태그 관련 옵션
+            // 배치 관련 옵션
+          }
+        }
+        div.comp-top-nav-login-user-menu-box {
+          // 디버깅 옵션
+          // @include debugBlue();
+          // 박스모델 관련 옵션
+          @include initBox(50px, 50px, 0, 0, $bg-lv-01);
+          // 폰트 관련 옵션
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+          justify-items: flex-start;
+          align-items: flex-start;
+          ul.comp-top-nav-login-menu {
+            // 디버깅 옵션
+            // @include debugBlue();
+            // 박스모델 관련 옵션
+            @include initBox(50px, 50px, 0, 0, none);
+            // 폰트 관련 옵션
+            // 태그 관련 옵션
+            // 배치 관련 옵션
+            display: flex;
+            flex-direction: row;
+
+            li.comp-top-nav-login-menu-list:hover .comp-top-nav-login-sub {
+              display: block;
+            }
+
+            li.comp-top-nav-login-menu-list {
+              // 디버깅 옵션
+              // @include debugGreen();
+              // 박스모델 관련 옵션
+              @include initBox(50px, 50px, 0, 0, none);
+              // 폰트 관련 옵션
+              // line-height: 50px;
+              text-align: center;
+              // 태그 관련 옵션
+              // 배치 관련 옵션
+              position: relative;
+              flex-basis: 20%;
+              a.comp-top-nav-login-user-menu {
+                // 디버깅 옵션
+                // @include debugBlue();
+                // 박스모델 관련 옵션
+                display: inline-block;
+                @include initBox(20px, 20px, 12.5px, 0, none);
+                // padding: 10px;
+                // 폰트 관련 옵션
+                // 태그 관련 옵션
+                // 배치 관련 옵션
+              }
+
+              ul.comp-top-nav-login-sub {
+                // 디버깅 옵션
+                // @include debugBlue();
+                // 박스모델 관련 옵션
+                @include initBox(auto, auto, 0, 0, $bg-lv-01);
+                box-shadow: 1px 1px 1px 1px rgba(224, 224, 224, 0.152) inset;
+                border-radius: 15px;
+                border: 2px solid rgb(237, 237, 237);
+                margin-left: -130px;
+                box-sizing: border-box;
+                // 폰트 관련 옵션
+                // 태그 관련 옵션
+                display: none;
+                // 배치 관련 옵션
+                position: absolute;
+                top: 50px;
+                width: 170px;
+                li {
+                  // 디버깅 옵션
+                  // @include debugBlue();
+                  // 박스모델 관련 옵션
+                  @include initBox(125px, 40px, 10px, 0, $bg-lv-01);
+                  padding-left: 30px;
+                  border-radius: 15px;
+                  // 폰트 관련 옵션
+                  // line-height: 20px;
+                  // 태그 관련 옵션
+                  // 배치 관련 옵션
+                }
+                li.comp-top-nav-login-user-menu-first {
+                  padding-top: 30px;
+                  // border-radius: 12px;
+                }
+                li.comp-top-nav-login-user-menu-last {
+                  padding-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

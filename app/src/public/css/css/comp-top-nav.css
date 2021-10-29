@@ -1,0 +1,63 @@
+header.comp-top-nav-a1 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 3px 3px 3px #e0e0e0;
+          box-shadow: 3px 3px 3px 3px #e0e0e0;
+  margin: auto;
+  padding-top: 45px;
+  position: fixed;
+  z-index: 5;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 ol.comp-top-nav-a1-b1-c1 {
+  display: block;
+  width: 1300px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  margin: auto;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 820px 120px 120px 120px 120px;
+      grid-template-columns: 820px 120px 120px 120px 120px;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 ol.comp-top-nav-a1-b1-c1 li {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 ol.comp-top-nav-a1-b1-c1 li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555555;
+  display: block;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 ol.comp-top-nav-a1-b1-c1 li a span {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #9e9e9e;
+}
+
+header.comp-top-nav-a1 nav.comp-top-nav-a1-b1 ol.comp-top-nav-a1-b1-c1 li:first-child {
+  text-align: left;
+  padding-top: 0;
+}

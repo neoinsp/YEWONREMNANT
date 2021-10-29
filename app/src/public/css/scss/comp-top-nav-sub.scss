@@ -1,0 +1,93 @@
+@import './mixin';
+@import './variables';
+
+header.nav-top-container {
+  // 디버깅 옵션
+  // @include debugRed();
+  // 박스모델 관련 옵션
+  @include initBox(100%, 100px, 0, 0, $bg-lv-01);
+  box-shadow: 3px 3px 3px 3px rgb(224, 224, 224);
+  margin: auto;
+  padding-top: 50px;
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  position: fixed;
+  z-index: 5;
+  nav.nav-top {
+    // 디버깅 옵션
+    // @include debugRed();
+    // 박스모델 관련 옵션
+    // 폰트 관련 옵션
+    // 태그 관련 옵션
+    // 배치 관련 옵션
+    // 자식요소 정렬 옵션
+    ol.nav-top-item-box {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      @include initBox(1300px, 50px, 0, 0, $bg-lv-01);
+      margin: auto;
+      // 폰트 관련 옵션
+      // 태그 관련 옵션
+      // 배치 관련 옵션
+      // 자식요소 정렬 옵션
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      li:first-child {
+        // 디버깅 옵션
+        // @include debugRed();
+        // 박스모델 관련 옵션
+        // 폰트 관련 옵션
+        // 태그 관련 옵션
+        // 배치 관련 옵션
+        // 자식요소 정렬 옵션
+        a {
+          // 디버깅 옵션
+          // @include debugRed();
+          // 박스모델 관련 옵션
+          // 폰트 관련 옵션
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+          // 자식요소 정렬 옵션
+          display: grid;
+          grid-template-columns: 55px 1fr;
+          div {
+            // 디버깅 옵션
+            // @include debugRed();
+            // 박스모델 관련 옵션
+            padding-left: 5px;
+            // 폰트 관련 옵션
+            // 태그 관련 옵션
+            // 배치 관련 옵션
+            // 자식요소 정렬 옵션
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            span:nth-child(1) {
+              // 디버깅 옵션
+              // @include debugRed();
+              // 박스모델 관련 옵션
+              margin-top: 3.5px;
+              // 폰트 관련 옵션
+              @include setFont($font-second-title, 500, $text-lv-02);
+              // 태그 관련 옵션
+              // 배치 관련 옵션
+              // 자식요소 정렬 옵션
+            }
+            span:nth-child(2) {
+              // 디버깅 옵션
+              // @include debugRed();
+              // 박스모델 관련 옵션
+              margin-top: 1.5px;
+              // 폰트 관련 옵션
+              @include setFont($font-sub-title, 400, $text-lv-04);
+              // 태그 관련 옵션
+              // 배치 관련 옵션
+              // 자식요소 정렬 옵션
+            }
+          }
+        }
+      }
+    }
+  }
+}

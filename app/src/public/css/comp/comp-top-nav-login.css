@@ -1,0 +1,196 @@
+header.comp-top-nav-login-a1 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 3px 3px 3px #e0e0e0;
+          box-shadow: 3px 3px 3px 3px #e0e0e0;
+  margin: auto;
+  padding-top: 45px;
+  position: fixed;
+  z-index: 5;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 {
+  display: block;
+  width: 1300px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  margin: auto;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 720px 120px 120px 120px 220px;
+      grid-template-columns: 720px 120px 120px 120px 220px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li {
+  text-align: left;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555555;
+  display: block;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li a span {
+  display: block;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 300;
+  color: #9e9e9e;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 80px 20px;
+      grid-template-columns: 50px 80px 20px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-image-box {
+  display: block;
+  width: auto;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-name-box {
+  display: block;
+  width: auto;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  padding-top: 6px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-name-box div.comp-top-nav-login-user-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555555;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-name-box div.comp-top-nav-login-user-type {
+  font-size: 13px;
+  font-weight: 400;
+  color: #bebebe;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  justify-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list:hover .comp-top-nav-login-sub {
+  display: block;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: none;
+  text-align: center;
+  position: relative;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list a.comp-top-nav-login-user-menu {
+  display: inline-block;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 12.5px;
+  margin: 0;
+  background-color: none;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list ul.comp-top-nav-login-sub {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(224, 224, 224, 0.152) inset;
+          box-shadow: 1px 1px 1px 1px rgba(224, 224, 224, 0.152) inset;
+  border-radius: 15px;
+  border: 2px solid #ededed;
+  margin-left: -130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 170px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list ul.comp-top-nav-login-sub li {
+  display: block;
+  width: 125px;
+  height: 40px;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffffff;
+  padding-left: 30px;
+  border-radius: 15px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list ul.comp-top-nav-login-sub li.comp-top-nav-login-user-menu-first {
+  padding-top: 30px;
+}
+
+header.comp-top-nav-login-a1 nav.comp-top-nav-login-a1-b1 ol.comp-top-nav-login-a1-b1-c1 li.comp-top-nav-login-user-box div.comp-top-nav-login-user-menu-box ul.comp-top-nav-login-menu li.comp-top-nav-login-menu-list ul.comp-top-nav-login-sub li.comp-top-nav-login-user-menu-last {
+  padding-bottom: 30px;
+}

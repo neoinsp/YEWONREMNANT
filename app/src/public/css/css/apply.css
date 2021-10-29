@@ -1,0 +1,11 @@
+div.contant-container {
+  border: 1px solid red;
+  display: block;
+  width: 1300px;
+  height: 500px;
+  padding: 0;
+  margin: auto;
+  background-color: #eeeeee;
+  padding-top: 200px;
+  z-index: -1;
+}

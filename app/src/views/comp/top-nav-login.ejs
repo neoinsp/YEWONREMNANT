@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Design -->
+    <!-- Design - init -->
     <link rel="stylesheet" href="/css/comp/init.css" />
+
+    <!-- Design - Comp -->
     <link rel="stylesheet" href="/css/comp/comp-top-nav-login.css" />
-    <link rel="stylesheet" href="/css/page/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <!-- 구글 웹폰트 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -25,7 +26,6 @@
 
     <title>Document</title>
   </head>
-
   <body>
     <!-- HTML - Comp - Top Navigation Logined - Basic -->
     <header class="comp-top-nav-login-a1">
@@ -69,17 +69,21 @@
                   </a>
                   <ul class="comp-top-nav-login-sub">
                     <li class="comp-top-nav-login-user-menu-first">
-                      <a href="/scholar/intro"
+                      <a href="/"
                         >장학금신청하기<br /><span
                           >Apply for a scholarship</span
                         ></a
                       >
                     </li>
                     <li class="comp-top-nav-login-user-menu-item">
-                      <a href="/">마이페이지<br /><span>my page</span></a>
+                      <a href="/auth/mypage"
+                        >마이페이지<br /><span>my page</span></a
+                      >
                     </li>
                     <li class="comp-top-nav-login-user-menu-last">
-                      <a href="/">로그아웃<br /><span>Log out</span></a>
+                      <a href="/auth/logout-process"
+                        >로그아웃<br /><span>Log out</span></a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -91,37 +95,5 @@
       </nav>
     </header>
     <!-- / HTML Comp End -->
-    <div class="index-container">
-      <div class="index-container-left">
-        <img src="/image/index-lift-box-item.png" alt="" />
-      </div>
-      <div class="index-container-center">
-        <div class="index-hero">
-          <div class="index-hero-first-box">
-            <div class="index-hero-first-box-title">
-              <span>Yewon Remnant<br />Scholarship</span><br /><span
-                class="index-hero-first-subtitle"
-                >차세대 선교사들을 위한 발판 예원 렘넌트 장학금</span
-              >
-            </div>
-            <div>
-              <a href="/scholar/intro" class="index-hero-first-box-apply"
-                >2021 장학금 신청하기 GO!</a
-              >
-            </div>
-          </div>
-
-          <div class="index-hero-second-box">
-            <img
-              class="index-hero-second-box-img"
-              src="/image/index-text@2x.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <footer class="index-footer"></footer>
-      </div>
-      <div class="index-container-right"></div>
-    </div>
   </body>
 </html>

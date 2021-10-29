@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .login-page {
   width: 360px;
-  padding: 16% 0 0;
+  padding: 13% 0 0;
   margin: auto;
 }
 
@@ -33,6 +33,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 .form button {
@@ -48,6 +49,7 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .form button:hover,

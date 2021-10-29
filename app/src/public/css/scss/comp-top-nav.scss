@@ -1,0 +1,76 @@
+@import './mixin';
+@import './variables';
+
+$main-title-font-size: 14px;
+$sub-title-size: 12px;
+
+$comp-widht: 100%;
+$comp-height: 100px;
+
+header.comp-top-nav-a1 {
+  // 디버깅 옵션
+  // @include debugRed();
+  // 박스모델 관련 옵션
+  @include initBox($comp-widht, $comp-height, 0, 0, $bg-lv-01);
+  box-shadow: 3px 3px 3px 3px rgb(224, 224, 224);
+  margin: auto;
+  padding-top: 45px;
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  position: fixed;
+  z-index: 5;
+  nav.comp-top-nav-a1-b1 {
+    // 디버깅 옵션
+    // @include debugRed();
+    // 박스모델 관련 옵션
+    @include initBox(auto, auto, 0, 0, $bg-lv-01);
+    // 폰트 관련 옵션
+    // 태그 관련 옵션
+    // 배치 관련 옵션
+
+    ol.comp-top-nav-a1-b1-c1 {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      @include initBox(1300px, 50px, 0, 0, $bg-lv-01);
+      margin: auto;
+      // 폰트 관련 옵션
+      // 태그 관련 옵션
+      list-style: none;
+      // 배치 관련 옵션
+      display: grid;
+      grid-template-columns: 820px 120px 120px 120px 120px;
+      li {
+        // 디버깅 옵션
+        // @include debugRed();
+        // 박스모델 관련 옵션
+        padding-top: 10px;
+        // 폰트 관련 옵션
+        text-align: center;
+        // 태그 관련 옵션
+        // 배치 관련 옵션
+        a {
+          // 디버깅 옵션
+          // @include debugRed();
+          // 박스모델 관련 옵션
+          // 폰트 관련 옵션
+          @include setFont(15px, 500, $text-lv-03);
+          // 태그 관련 옵션
+          // 배치 관련 옵션
+          display: block;
+
+          span {
+            display: block;
+            padding-top: 5px;
+            @include setFont(12px, 300, $text-lv-04);
+          }
+        }
+      }
+      li:first-child {
+        text-align: left;
+        padding-top: 0;
+      }
+    }
+  }
+}

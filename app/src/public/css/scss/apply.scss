@@ -1,0 +1,15 @@
+@import './mixin';
+@import './variables';
+
+div.contant-container {
+  // 디버깅 옵션
+  @include debugRed();
+  // 박스모델 관련 옵션
+  @include initBox(1300px, 500px, 0, auto, $bg-lv-00);
+  padding-top: 200px;
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  z-index: -1;
+  // 자식요소 배치 관련
+}

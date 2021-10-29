@@ -7,14 +7,17 @@
 
     <!-- Design -->
     <link rel="stylesheet" href="/css/comp/init.css" />
-    <link rel="stylesheet" href="/css/comp/nav-top.css" />
-    <link rel="stylesheet" href="/css/intro.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/css/css/comp-top-nav-sub.css" />
+    <link rel="stylesheet" href="/css/css/comp-basic-box.css" />
+    <link rel="stylesheet" href="/css/css/comp-basic-box-title.css" />
+    <link rel="stylesheet" href="/css/css/apply.css" />
+
     <!-- 구글 웹폰트 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- 어섬폰트 cdn -->
     <link
       rel="stylesheet"
@@ -36,38 +39,72 @@
       <nav class="nav-top">
         <ol class="nav-top-item-box">
           <li class="nav-top-item">
-            <a href="/">
-              <img src="/image/top-nav-logo.png" alt="" />
+            <a href="/auth/registration">
+              <img src="/image/top-nav-arrow.png" alt="" />
+              <div>
+                <span>장학금 지원서</span>
+                <span>Apply for the Scholarship</span>
+              </div>
             </a>
           </li>
-
-          <li class="nav-top-item">
-            <!-- <a href="">About Us<br /><span>About Us</span></a> -->
-          </li>
-
-          <li class="nav-top-item">
-            <!-- <a href="">장학금 소개<br /><span>About Scholarships</span></a> -->
-          </li>
-
-          <li class="nav-top-item">
-            <a href="">회원가입<br /><span>Sign up</span></a>
-          </li>
-
-          <li class="nav-top-item">
-            <a href="">로그인<br /><span>Login</span></a>
-          </li>
+          <li class="nav-top-item"></li>
         </ol>
       </nav>
     </header>
     <!-- / Comp -->
 
-    <div class="index-container">
-      <div class="reg-selectbox">
-        <button class="r">
-          <a href="/auth/registration-rt">장학금 신청하기</a>
-        </button>
-        <button class="m">미션장학금 신청하기</button>
-      </div>
+    <!-- 콘텐츠 콘테이너 -->
+    <div class="contant-container">
+      <form class="register-form">
+        <div class="apply-contant">
+          <!-- HTML - Comp - Basic Box Title -->
+          <article class="comp-basic-box-title-a1">
+            <!-- Title : 타이틀 박스 -->
+            <div class="comp-basic-box-title-a1-b1">
+              <div class="comp-basic-box-title-a1-b1-c1">일반정보</div>
+              <div class="comp-basic-box-title-a1-b1-c2">
+                General information
+              </div>
+            </div>
+          </article>
+          <!-- / HTML Comp End -->
+        </div>
+
+        <div class="apply-content">
+          <!-- HTML - Comp - Basic Box -->
+          <article class="comp-basic-box-a1">
+            <!-- Title : 타이틀 박스 -->
+            <div class="comp-basic-box-a1-b1">
+              <div class="comp-basic-box-a1-b1-c1">일반정보</div>
+              <div class="comp-basic-box-a1-b1-c2">General information</div>
+            </div>
+            <!-- Conent : 컨텐츠 박스 -->
+            <div class="comp-basic-box-a1-b2">
+              <div class="comp-boasic-box-a1-b2-c1"></div>
+            </div>
+          </article>
+          <!-- / HTML Comp End -->
+        </div>
+
+        <div class="apply-content">
+          <!-- HTML - Comp - Basic Box -->
+          <article class="comp-basic-box-a1">
+            <!-- Title : 타이틀 박스 -->
+            <div class="comp-basic-box-a1-b1">
+              <div class="comp-basic-box-a1-b1-c1">일반정보</div>
+              <div class="comp-basic-box-a1-b1-c2">General information</div>
+            </div>
+            <!-- Conent : 컨텐츠 박스 -->
+            <div class="comp-basic-box-a1-b2">
+              <div class="comp-boasic-box-a1-b2-c1"></div>
+            </div>
+          </article>
+          <!-- / HTML Comp End -->
+        </div>
+
+        <p id="button">회원가입</p>
+      </form>
     </div>
+    <!-- / Comp -->
   </body>
 </html>

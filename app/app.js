@@ -8,6 +8,7 @@ const app = express();
 const home = require('./src/routes/home/home');
 const auth = require('./src/routes/auth/auth');
 const scholar = require('./src/routes/scholar/scholar');
+const comp = require('./src/routes/comp/comp');
 
 // 앱 세팅
 app.set('view engine', 'ejs'); //'ejs'탬플릿을 엔진으로 한다.
@@ -21,6 +22,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', home);
 app.use('/auth', auth);
 app.use('/scholar', scholar);
+
+// 컴포넌트 테스트
+app.use('/comp', comp);
 
 module.exports = app;
 

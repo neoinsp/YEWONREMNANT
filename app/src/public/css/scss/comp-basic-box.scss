@@ -1,0 +1,89 @@
+@import './mixin';
+@import './variables';
+
+$title-font-size: 14px;
+$input-font-size: 12px;
+
+$comp-widht: 1250px;
+$comp-height: 600px;
+$comp-padding: 25px;
+
+$input-height: 40px;
+
+// Componant : 래귤러 박스 컴포넌트 1
+
+// Componant : 컴포넌트 시작
+article.comp-basic-box-a1 {
+  // 디버깅 옵션
+  // @include debugRed();
+  // 박스모델 관련 옵션
+  @include initBox(
+    $comp-widht + $comp-padding * 2,
+    $comp-height,
+    0,
+    0,
+    $bg-lv-01
+  );
+  // 폰트 관련 옵션
+  // 태그 관련 옵션
+  // 배치 관련 옵션
+  display: grid;
+  grid-template-rows: 70px 1fr;
+
+  // Title : 타이틀 박스
+  div.comp-basic-box-a1-b1 {
+    // 디버깅 옵션
+    // @include debugRed();
+    // 박스모델 관련 옵션
+    @include initBox($comp-widht, auto, $comp-padding, 0, $bg-lv-01);
+    box-shadow: 2px 2px 2px 2px rgba(224, 224, 224, 0.671);
+    // 폰트 관련 옵션
+    // 태그 관련 옵션
+    // 배치 관련 옵션
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    div.comp-basic-box-a1-b1-c1 {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      // 폰트 관련 옵션
+      @include setFont($font-title, 500, $text-lv-01);
+      // 태그 관련 옵션
+      // 배치 관련 옵션
+    }
+    div.comp-basic-box-a1-b1-c2 {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      // 폰트 관련 옵션
+      @include setFont($font-sub-title, 400, $text-lv-05);
+      text-align: right;
+      // 태그 관련 옵션
+      // 배치 관련 옵션
+    }
+  }
+
+  //Conent : 컨텐츠 박스
+  div.comp-basic-box-a1-b2 {
+    // 디버깅 옵션
+    // @include debugRed();
+    // 박스모델 관련 옵션
+    @include initBox($comp-widht, auto, $comp-padding, 0, $bg-lv-01);
+    // 폰트 관련 옵션
+    // 태그 관련 옵션
+    // 배치 관련 옵션
+    div.comp-basic-box-a1-b2-c1 {
+      // 디버깅 옵션
+      // @include debugRed();
+      // 박스모델 관련 옵션
+      @include initBox(100%, 100%, 0, 0, $bg-lv-02);
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px rgba(224, 224, 224, 0.152) inset;
+      // 폰트 관련 옵션
+      // 태그 관련 옵션
+      // 배치 관련 옵션
+    }
+  }
+}

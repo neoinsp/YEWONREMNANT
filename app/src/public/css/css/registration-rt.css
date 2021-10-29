@@ -1,14 +1,14 @@
 div.reg-rt-container {
-  z-index: -1;
   display: block;
   width: 1200px;
   height: auto;
   padding: 0;
   margin: 0;
   background-color: #eeeeee;
+  margin: auto;
+  z-index: -1;
   display: -ms-grid;
   display: grid;
-  margin: auto;
 }
 
 div.reg-rt-container article.reg-rt-a1 {
@@ -453,20 +453,25 @@ div.reg-rt-container article.reg-rt-a2 div.reg-rt-a2-b2 div.reg-rt-a2-b2-c2 p se
      object-fit: contain;
 }
 
-div.reg-rt-container button {
+div.reg-rt-container p#button:hover {
+  background-color: #346cc5;
+}
+
+div.reg-rt-container p#button {
   display: block;
   width: 20%;
-  height: 40px;
-  padding: 0;
+  height: 25px;
+  padding: 10px;
   margin: auto;
-  background-color: #555555;
-  padding: 0 0 0 10px;
+  background-color: #417cdb;
+  padding-top: 17.5px;
   margin-bottom: 100px;
   display: inline-block;
   vertical-align: middle;
   border: 1px solid gainsboro;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
 }
